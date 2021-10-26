@@ -14,10 +14,6 @@ type LoggerInterface interface {
   Messages() []string
 }
 
-func Log(li LoggerInterface, mesg string) {
-  li.Log(mesg)
-}
-
 func Messages(li LoggerInterface) []string {
   return li.Messages()
 }
